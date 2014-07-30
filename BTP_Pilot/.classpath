@@ -3,5 +3,11 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="lib" path="/home/aditya/Downloads/stanford-postagger-2011-04-20/stanford-postagger.jar"/>
+	<classpathentry kind="lib" path="/home/aditya/Documents/Workspace/Rouge.jar"/>
+	<classpathentry kind="lib" path="/home/aditya/Downloads/commons-io-2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/home/aditya/Downloads/commons-lang3-3.3.2/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="/home/aditya/Downloads/commons-math3-3.3/commons-math3-3.3.jar"/>
+	<classpathentry kind="lib" path="/home/aditya/Downloads/jsap-2.1.jar"/>
+	<classpathentry kind="lib" path="/home/aditya/stanford-corenlp-full-2014-06-16/stanford-corenlp-3.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
