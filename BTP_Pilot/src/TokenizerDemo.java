@@ -2,6 +2,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.process.CoreLabelTokenFactory;
 import edu.stanford.nlp.process.DocumentPreprocessor;
@@ -14,13 +16,14 @@ public class TokenizerDemo {
 	  String arg = "file.txt";
       DocumentPreprocessor dp = new DocumentPreprocessor(arg);
       for (List sentence : dp) {
-        System.out.println(sentence);
+//        System.out.println(sentence.toString());
+    	  System.out.println(StringUtils.join(sentence, " "));
       }
-      // option #2: By token
-      PTBTokenizer ptbt = new PTBTokenizer(new FileReader(arg),new CoreLabelTokenFactory(), "");
-      for (CoreLabel label; ptbt.hasNext(); ) {
-        label = (CoreLabel) ptbt.next();
-        System.out.println(label);
-      }
+//      // option #2: By token
+//      PTBTokenizer ptbt = new PTBTokenizer(new FileReader(arg),new CoreLabelTokenFactory(), "");
+//      for (CoreLabel label; ptbt.hasNext(); ) {
+//        label = (CoreLabel) ptbt.next();
+//        System.out.println(label);
+//      }
     }
   }
